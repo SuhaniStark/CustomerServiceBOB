@@ -45,22 +45,22 @@ First, make sure you have the required libraries installed:
 now fork the repository to your device and run the program 
 
 ## Explanation:
-# Load the Pretrained Model: 
+### Load the Pretrained Model: 
 We use the pipeline function from the transformers library to load a text generation model. In this example, we're simulating using GPT-3.5, but you can use any appropriate model.
 
-# Sample Data: 
+### Sample Data: 
 We create a mock dataset containing customer IDs and their interaction history. This data is stored in a pandas DataFrame.
 
-# Get Customer History: 
+### Get Customer History: 
 The function get_customer_history retrieves past interactions of a customer based on their customer ID.
 
-# Generate Recommendation: 
+### Generate Recommendation: 
 The function generate_recommendation takes the customer's interaction history, concatenates it into a single text string, and generates a recommendation using the pretrained model.
 
-# Update Recommendations: 
+### Update Recommendations: 
 The function update_recommendations combines the previous two functions. It fetches the customer's history, generates a recommendation, and returns it.
 
-# Example Usage: 
+### Example Usage: 
 The example demonstrates how to use the functions to get a recommendation for a customer with ID 1.
 
 This is a basic implementation. For a production system, you'd need to handle more sophisticated data storage, error handling, and integration with customer service platforms. Additionally, ensuring data privacy and security, especially when dealing with real customer data, is crucial.
